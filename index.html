@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manasi Bhandari | Accountant Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', 'Roboto', sans-serif;
+      background-color: #f7f8fa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    header {
+      background: linear-gradient(135deg, #004C8C, #0066CC);
+      color: white;
+      padding: 100px 15px;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+    header .fadeInDown {
+      animation: fadeInDown 1s ease-out;
+    }
+    header .zoomIn {
+      animation: zoomIn 1s ease-out;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes zoomIn {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    header .profile-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid white;
+      object-fit: cover;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+    header .profile-image:hover {
+      transform: scale(1.1);
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+    header p {
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+    header .slogan {
+      font-size: 1.3rem;
+      font-weight: 400;
+      font-style: italic;
+      opacity: 0.9;
+      margin-top: 20px;
+    }
+    .container {
+      padding: 60px 15px;
+    }
+    .card-custom {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background-color: #fff;
+    }
+    .card-custom:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+    .card-header-custom {
+      background-color: #004C8C;
+      color: white;
+      padding: 15px 20px;
+      font-size: 1.6rem;
+      font-weight: 600;
+      border-bottom: none;
+    }
+    .card-body {
+      padding: 25px;
+      font-size: 1.1rem;
+    }
+    .list-check li {
+      list-style-type: none;
+      margin-bottom: 10px;
+      padding-left: 25px;
+      position: relative;
+      font-size: 1.1rem;
+    }
+    .list-check li::before {
+      content: "✔";
+      color: #00A0E8;
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 1.2rem;
+      line-height: 1;
+    }
+    .btn-custom {
+      background: #0066CC;
+      color: #FFFFFF;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+    .btn-custom:hover {
+      background: #00A0E8;
+      transform: scale(1.05);
+    }
+    .btn-custom:active {
+      transform: scale(1);
+    }
+    footer {
+      background-color: #004C8C;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+    }
+    .social-icons a {
+      color: white;
+      font-size: 1.8rem;
+      margin: 0 15px;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .social-icons a:hover {
+      color: #00A0E8;
+    }
+    .fadeInUp {
+      animation: fadeInUp 1s ease-out;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .highlight {
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-left: 5px solid #0066CC;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+    .highlight:hover {
+      background-color: #f1f1f1;
+      border-left: 5px solid #00A0E8;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="zoomIn">
+      <img src="my_pic.jpg" alt="Manasi Bhandari" class="profile-image">
+    </div>
+    <div class="fadeInDown">
+      <h1>Manasi Bhandari</h1>
+      <p>Accounting Graduate | Tax Compliance | Financial Reporting</p>
+      <p class="slogan">"Turning Numbers into Insights, Delivering Financial Solutions with Precision"</p>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card card-custom fadeInUp">
+        <div class="card-header card-header-custom">
+          About Me
+        </div>
+        <div class="card-body">
+          <p>
+            I am a results-driven accounting graduate with a passion for numbers and detail. With strong experience in financial reporting, tax compliance, and bookkeeping, I am currently interning at Vivid Partners where I apply my knowledge of Australian taxation laws and financial systems. I am eager to contribute my analytical skills and proactive mindset to an accounting team.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card card-custom fadeInUp">
+        <div class="card-header card-header-custom">
+          Skills
+        </div>
+        <div class="card-body">
+          <div class="highlight">
+            <ul class="list-check">
+              <li>Accounting Software: Xero (Certified), MYOB, Reckon, Microsoft Excel</li>
+              <li>Financial Reporting: BAS, ITR, Payroll Processing, Bank Reconciliation</li>
+              <li>Taxation & Compliance: Australian Taxation Laws, GST Compliance</li>
+              <li>Soft Skills: Communication, Problem-solving, Time Management</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card-custom fadeInUp">
+    <div class="card-header card-header-custom">
+      Experience
+    </div>
+    <div class="card-body">
+      <div class="mb-4 highlight">
+        <h4>Accountant Intern - Vivid Partners, WA, Australia  <small class="text-muted">(Jan 2025 - Present)</small></h4>
+        <ul class="list-check">
+          <li>Assisted in tax compliance and financial statement preparation.</li>
+          <li>Processed ITR, BAS, and payroll using Xero.</li>
+          <li>Performed bank reconciliations and conducted financial analysis.</li>
+        </ul>
+      </div>
+      <div class="mb-4 highlight">
+        <h4>Account Assistant Intern - RnD Taxation, WA, Australia  <small class="text-muted">(Sep 2024)</small></h4>
+        <ul class="list-check">
+          <li>Gained hands-on experience in Reckon and MYOB software.</li>
+          <li>Assisted in tax return preparation and BAS lodgment.</li>
+          <li>Managed bookkeeping and client communications.</li>
+        </ul>
+      </div>
+      <div class="mb-4 highlight">
+        <h4>Aged Care Support Worker - BaptistCare Gracewood, WA, Australia <small class="text-muted">(October 2021 – Present)</small></h4>
+        <ul class="list-check">
+          <li>Provided compassionate care and assistance to aged care residents, ensuring their well-being.</li>
+          <li>Followed first aid care and manual handling protocols to maintain safety standards..</li>
+          <li>Developed strong interpersonal and teamwork skills while supporting residents’ daily needs.
+        </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card-custom fadeInUp">
+    <div class="card-header card-header-custom">
+      Education & Certifications
+    </div>
+    <div class="card-body">
+      <ul class="list-check">
+        <li>Bachelor of Business (Accounting) - Stanley College (Ongoing, Expected 2025)</li>
+        <li>Certificate in Xero - Completed 2025</li>
+        <li>Diploma in Health Studies - Edith Cowen College, 2020</li>
+        <li>Certificate III in Individual Support - 2019</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card card-custom fadeInUp">
+    <div class="card-header card-header-custom">
+      Contact
+    </div>
+    <div class="card-body">
+      <p>Email: <a href="mailto:manasibhandari10@gmail.com">manasibhandari10@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/manasi-bhandari-82428818b/" target="_blank">View my LinkedIn profile</a></p>
+      <p class="mt-3"><a href="mailto:manasibhandari10@gmail.com" class="btn-custom">Get in Touch</a></p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/manasi-bhandari-82428818b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="mailto:manasibhandari10@gmail.com"><i class="fab fa-google"></i></a>
+  </div>
+  <p>&copy; 2025 Manasi Bhandari. All Rights Reserved.</p>
+</footer>
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
